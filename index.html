@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infografia Interativa — CPR de Cáceres</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .animate-fadeIn {
+      animation: fadeIn 0.3s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-20 selection:bg-indigo-500 selection:text-white">
+
+  <!-- HEADER HERO -->
+  <header class="relative bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white py-16 px-6 overflow-hidden">
+    <!-- Grid decorativo de fundo -->
+    <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:30px_30px]"></div>
+    
+    <!-- Elementos visuais abstratos -->
+    <div class="absolute top-10 right-10 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+    <div class="absolute bottom-5 left-20 w-80 h-80 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10 text-center md:text-left">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex-1">
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-4 uppercase tracking-wider">
+            Consejería de Educación, Ciencia y Formación Profesional
+          </span>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none mb-4">
+            CPR de Cáceres
+          </h1>
+          <p class="text-xl md:text-2xl font-light text-slate-300 max-w-3xl mb-3">
+            Centro de Professores e de Recursos de Cáceres
+          </p>
+          <p class="text-base text-slate-400 max-w-2xl">
+            O nó estratégico que liga as políticas educativas de inovação com a realidade quotidiana das salas de aula na região da Estremadura (Espanha). Sediado em Cáceres, Património da Humanidade.
+          </p>
+        </div>
+        
+        <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 w-full md:w-auto min-w-[300px]">
+          <div class="text-sm uppercase text-slate-400 font-bold mb-4 tracking-wider text-center border-b border-white/10 pb-2">
+            Identidade Institucional
+          </div>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center gap-4">
+              <span class="text-slate-300 text-sm">Diretora:</span>
+              <span class="font-semibold text-emerald-400">Sara Vázquez Paredes</span>
+            </div>
+            <div class="flex justify-between items-center gap-4">
+              <span class="text-slate-300 text-sm">Sede:</span>
+              <span class="font-medium text-slate-200 text-sm text-right">Calle Gómez Becerra, 6</span>
+            </div>
+            <div class="flex justify-between items-center gap-4">
+              <span class="text-slate-300 text-sm">Abrangência:</span>
+              <span class="font-semibold text-indigo-300">Públicos e Concertados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK STATS & SUMMARY BAR -->
+  <section class="max-w-7xl mx-auto px-6 -mt-8 relative z-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+        <span class="text-slate-400 text-xs font-bold uppercase tracking-wider block mb-2">Especialistas</span>
+        <span class="text-3xl md:text-4xl font-extrabold text-indigo-600 block">8 Áreas</span>
+        <span class="text-xs text-slate-500 mt-2">Corpo Técnico focado na excelência pedagógica</span>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+        <span class="text-slate-400 text-xs font-bold uppercase tracking-wider block mb-2">Sustentabilidade</span>
+        <span class="text-3xl md:text-4xl font-extrabold text-emerald-600 block">4 Pilares</span>
+        <span class="text-xs text-slate-500 mt-2">Alinhamento estrito com os ODS e "Zero Papel"</span>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+        <span class="text-slate-400 text-xs font-bold uppercase tracking-wider block mb-2">Internacional</span>
+        <span className="text-3xl md:text-4xl font-extrabold text-violet-600 block" style="font-size: 1.875rem; line-height: 2.25rem; font-weight: 800; color: #7c3aed;">Erasmus+</span>
+        <span class="text-xs text-slate-500 mt-2">Mobilidades internacionais de vanguarda</span>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+        <span class="text-slate-400 text-xs font-bold uppercase tracking-wider block mb-2">Normativa</span>
+        <span class="text-3xl md:text-4xl font-extrabold text-amber-600 block">8 Anos Máx</span>
+        <span class="text-xs text-slate-500 mt-2">Rotação de assessores na comissão de serviços</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: ENQUADRAMENTO NORMATIVO (COLLAPSIBLE / ACCORDION) -->
+  <section class="max-w-7xl mx-auto px-6 mt-12">
+    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+      <button 
+        id="accordion-toggle"
+        class="w-full flex justify-between items-center p-6 md:p-8 text-left bg-slate-50 hover:bg-slate-100/80 transition-colors focus:outline-none"
+      >
+        <div class="flex items-start gap-4">
+          <div class="p-3 bg-indigo-100 text-indigo-600 rounded-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 class="text-lg md:text-xl font-bold text-slate-900">Enquadramento Normativo e Identidade do CPR</h2>
+            <p class="text-sm text-slate-500">Clique para expandir as bases legais regionais, o Decreto 69/2007 e a rotação em comissão de serviços.</p>
+          </div>
+        </div>
+        <div class="p-2 bg-white rounded-full border border-slate-200">
+          <svg id="accordion-arrow" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </div>
+      </button>
+
+      <div id="accordion-content" class="hidden p-6 md:p-8 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-8 animate-fadeIn">
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold text-slate-900 border-b pb-2 border-indigo-100">Segurança Jurídica & Operacional</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            O sistema de formação permanente do professorado na região da Estremadura está ancorado no <strong>Decreto 69/2007</strong>, que define com exatidão toda a rede de recursos. Adicionalmente, a <strong>Ordem de 9 de junho de 2016</strong> estabelece o enquadramento operacional e os critérios para a gestão rigorosa do corpo técnico.
+          </p>
+          <div class="bg-indigo-50 border-l-4 border-indigo-600 p-4 rounded-r-xl">
+            <h4 class="font-bold text-indigo-950 text-xs uppercase tracking-wider mb-1">Impacto Estratégico</h4>
+            <p class="text-slate-700 text-sm">
+              Garante um sistema transparente, público e auditável que protege a qualidade e eficácia de todas as atividades de formação contínua.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold text-slate-900 border-b pb-2 border-emerald-100">O Segredo do Sucesso: Rotação Pedagógica</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            O corpo técnico opera em regime de <strong>"comissão de serviços"</strong> com um limite máximo estrito de permanência de <strong>oito anos</strong>. Esta norma obriga a que os assessores regressem periodicamente às salas de aula reais com os seus próprios alunos.
+          </p>
+          <div class="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-r-xl">
+            <h4 class="font-bold text-emerald-950 text-xs uppercase tracking-wider mb-1">Benefício Prático</h4>
+            <p class="text-slate-700 text-sm">
+              Garante o frescor metodológico contínuo do centro. Impede o desfasamento entre as propostas teóricas e as necessidades urgentes e mutáveis dos professores no terreno.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: INTERACTIVE ADVISOR HUB -->
+  <section class="max-w-7xl mx-auto px-6 mt-12">
+    <div class="text-center mb-8">
+      <span class="text-xs font-bold text-indigo-600 tracking-wider uppercase bg-indigo-50 px-3 py-1 rounded-full">Equipa de Excelência</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-2">Áreas de Assessoria e Funções Críticas</h2>
+      <p class="text-slate-600 max-w-2xl mx-auto mt-1 text-sm md:text-base">
+        Professores de carreira especializados, selecionados através de rigorosos concursos de méritos e defesa pública de projetos. Use os filtros e a pesquisa em tempo real para explorar o seu impacto.
+      </p>
+    </div>
+
+    <!-- SEARCH AND FILTER BAR -->
+    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 mb-6 flex flex-col md:flex-row gap-4 items-center justify-between">
+      <!-- Search Box -->
+      <div class="relative w-full md:w-80">
+        <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </span>
+        <input 
+          type="text" 
+          id="search-input"
+          placeholder="Pesquisar assessor, área ou tag..."
+          class="w-full pl-10 pr-4 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all text-slate-900"
+        />
+      </div>
+
+      <!-- Quick Category Tabs -->
+      <div class="flex flex-wrap gap-2 w-full md:w-auto" id="filter-tabs">
+        <button 
+          data-category="all"
+          class="filter-btn px-3 py-1.5 text-xs font-bold rounded-lg transition-all bg-slate-900 text-white shadow-sm"
+        >
+          Todos (8)
+        </button>
+        <button 
+          data-category="digital"
+          class="filter-btn px-3 py-1.5 text-xs font-bold rounded-lg transition-all bg-slate-50 text-slate-600 hover:bg-slate-100"
+        >
+          Digital & Tecnologia
+        </button>
+        <button 
+          data-category="metodologia"
+          class="filter-btn px-3 py-1.5 text-xs font-bold rounded-lg transition-all bg-slate-50 text-slate-600 hover:bg-slate-100"
+        >
+          Metodologia & Currículo
+        </button>
+        <button 
+          data-category="inclusao"
+          class="filter-btn px-3 py-1.5 text-xs font-bold rounded-lg transition-all bg-slate-50 text-slate-600 hover:bg-slate-100"
+        >
+          Inclusão & Línguas
+        </button>
+      </div>
+    </div>
+
+    <!-- Grid of Expandable Assessors -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="assessores-grid">
+      
+      <!-- Assessor 1 -->
+      <div class="assessor-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" data-categories="all metodologia">
+        <div>
+          <div class="p-4 border-b border-teal-500 text-teal-700 bg-teal-50 flex justify-between items-center">
+            <span class="text-xs font-black uppercase tracking-wider">Inovação Educativa</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-white/60 font-medium">Assessor(a)</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold text-slate-900 mb-1 assessor-name">Ester Bejarano Bermejo</h3>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Metodologias Ativas</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#IA</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#MUÉVETE</span>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed italic card-preview">"Lidera a transformação metodológica nas salas de aula através de processos disruptivos..."</p>
+            <div class="hidden-details hidden space-y-4 pt-4 border-t border-slate-100 mt-4 animate-fadeIn">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Missão & Funções</span>
+                <p class="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100 leading-relaxed text-sm">
+                  Lidera a transformação metodológica nas salas de aula através de processos disruptivos. É responsável pela dinamização de programas estratégicos regionais como o 'MUÉVETE', focado na observação direta e partilha de boas práticas docentes, e pela formação em diretrizes éticas para a integração pedagógica da Inteligência Artificial.
+                </p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Impacto Prático</span>
+                <p class="text-xs text-indigo-950 bg-indigo-50/50 p-3 rounded-lg border border-indigo-100/50 italic">
+                  "Estabelece redes de colaboração docente onde professores visitam outros centros para aprender e replicar práticas de sucesso em tempo real."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+          <button class="toggle-details-btn text-xs font-bold py-2 px-4 rounded-lg flex items-center gap-1.5 bg-slate-200/60 text-slate-700 hover:bg-slate-200 transition-colors">
+            Ver Funções & Impacto
+            <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Assessor 2 -->
+      <div class="assessor-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" data-categories="all metodologia">
+        <div>
+          <div class="p-4 border-b border-blue-500 text-blue-700 bg-blue-50 flex justify-between items-center">
+            <span class="text-xs font-black uppercase tracking-wider">Formação em Centros</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-white/60 font-medium">Assessor(a)</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold text-slate-900 mb-1 assessor-name">Sara Vázquez Paredes (Diretora)</h3>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Aprendizagem</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Bem-estar</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Diagnóstico</span>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed italic card-preview">"Coordena o diagnóstico de necessidades formativas específicas de cada escola ou agrupamento..."</p>
+            <div class="hidden-details hidden space-y-4 pt-4 border-t border-slate-100 mt-4 animate-fadeIn">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Missão & Funções</span>
+                <p class="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100 leading-relaxed text-sm">
+                  Coordena o diagnóstico de necessidades formativas específicas de cada escola ou agrupamento. Desenha itinerários de autoformação ajustados aos claustros de professores e coordena planos integrais de saúde mental, inteligência emocional e bem-estar docente nas comunidades de aprendizagem.
+                </p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Impacto Prático</span>
+                <p class="text-xs text-indigo-950 bg-indigo-50/50 p-3 rounded-lg border border-indigo-100/50 italic">
+                  "Empodera os claustros inteiros para desenharem o seu próprio plano de desenvolvimento profissional, promovendo escolas emocionalmente saudáveis."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+          <button class="toggle-details-btn text-xs font-bold py-2 px-4 rounded-lg flex items-center gap-1.5 bg-slate-200/60 text-slate-700 hover:bg-slate-200 transition-colors">
+            Ver Funções & Impacto
+            <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Assessor 3 -->
+      <div class="assessor-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" data-categories="all digital">
+        <div>
+          <div class="p-4 border-b border-purple-500 text-purple-700 bg-purple-50 flex justify-between items-center">
+            <span class="text-xs font-black uppercase tracking-wider">Formação Profissional</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-white/60 font-medium">Assessor(a)</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold text-slate-900 mb-1 assessor-name">Jesús Durán Naharro</h3>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#FP Dual</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Aulas ATECA</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Sustentabilidade</span>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed italic card-preview">"Especialista na modernização da Formação Profissional (FP) e dos ensinos artísticos e de idiomas..."</p>
+            <div class="hidden-details hidden space-y-4 pt-4 border-t border-slate-100 mt-4 animate-fadeIn">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Missão & Funções</span>
+                <p class="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100 leading-relaxed text-sm">
+                  Especialista na modernização da Formação Profissional (FP) e dos ensinos artísticos e de idiomas. Gere o desenvolvimento da FP Dual e impulsiona a implantação das inovadoras Aulas ATECA (Aulas de Tecnologia Aplicada), equipadas com tecnologia de ponta para simulação profissional.
+                </p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Impacto Prático</span>
+                <p class="text-xs text-indigo-950 bg-indigo-50/50 p-3 rounded-lg border border-indigo-100/50 italic">
+                  "Reduz o fosso entre o mundo académico e as novas exigências tecnológicas do mercado de trabalho global."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+          <button class="toggle-details-btn text-xs font-bold py-2 px-4 rounded-lg flex items-center gap-1.5 bg-slate-200/60 text-slate-700 hover:bg-slate-200 transition-colors">
+            Ver Funções & Impacto
+            <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Assessor 4 -->
+      <div class="assessor-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" data-categories="all inclusao">
+        <div>
+          <div class="p-4 border-b border-rose-500 text-rose-700 bg-rose-50 flex justify-between items-center">
+            <span class="text-xs font-black uppercase tracking-wider">Atenção à Diversidade</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-white/60 font-medium">Assessor(a)</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold text-slate-900 mb-1 assessor-name">Silvia Ramos Esteban</h3>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Inclusão</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Neuroeducação</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Coeducação</span>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed italic card-preview">"Desenvolve planos de coeducação, inclusão e resolução pacífica de conflitos escolares..."</p>
+            <div class="hidden-details hidden space-y-4 pt-4 border-t border-slate-100 mt-4 animate-fadeIn">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Missão & Funções</span>
+                <p class="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100 leading-relaxed text-sm">
+                  Desenvolve planos de coeducação, inclusão e resolução pacífica de conflitos escolares. Aplica princípios da neuroeducação para personalizar a aprendizagem e coordena o inovador programa de 'Patios Universais e Inclusivos', que repensa os espaços de recreio para garantir o acolhimento de todos os alunos.
+                </p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Impacto Prático</span>
+                <p class="text-xs text-indigo-950 bg-indigo-50/50 p-3 rounded-lg border border-indigo-100/50 italic">
+                  "Desenha ambientes de aprendizagem emocionalmente seguros onde a diferença é celebrada como um recurso e não como um obstáculo."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+          <button class="toggle-details-btn text-xs font-bold py-2 px-4 rounded-lg flex items-center gap-1.5 bg-slate-200/60 text-slate-700 hover:bg-slate-200 transition-colors">
+            Ver Funções & Impacto
+            <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Assessor 5 -->
+      <div class="assessor-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" data-categories="all metodologia">
+        <div>
+          <div class="p-4 border-b border-amber-500 text-amber-700 bg-amber-50 flex justify-between items-center">
+            <span class="text-xs font-black uppercase tracking-wider">Desenvolvimento Curricular</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-white/60 font-medium">Assessor(a)</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold text-slate-900 mb-1 assessor-name">María Guerrero Castro</h3>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#LOMLOE</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#REBEX</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Competências</span>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed italic card-preview">"Especialista no desdobramento normativo do modelo competencial exigido pela lei LOMLOE..."</p>
+            <div class="hidden-details hidden space-y-4 pt-4 border-t border-slate-100 mt-4 animate-fadeIn">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Missão & Funções</span>
+                <p class="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100 leading-relaxed text-sm">
+                  Especialista no desdobramento normativo do modelo competencial exigido pela lei educativa LOMLOE. Apoia na criação e avaliação de Situações de Aprendizagem interdisciplinares e gere o dinamismo da Rede de Bibliotecas Escolares da Estremadura (REBEX) na região de Cáceres.
+                </p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Impacto Prático</span>
+                <p class="text-xs text-indigo-950 bg-indigo-50/50 p-3 rounded-lg border border-indigo-100/50 italic">
+                  "Garante o rigor metodológico das novas reformas educativas e converte as bibliotecas escolares em centros dinâmicos de recursos e media centers."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+          <button class="toggle-details-btn text-xs font-bold py-2 px-4 rounded-lg flex items-center gap-1.5 bg-slate-200/60 text-slate-700 hover:bg-slate-200 transition-colors">
+            Ver Funções & Impacto
+            <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Assessor 6 -->
+      <div class="assessor-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" data-categories="all inclusao">
+        <div>
+          <div class="p-4 border-b border-indigo-500 text-indigo-700 bg-indigo-50 flex justify-between items-center">
+            <span class="text-xs font-black uppercase tracking-wider">Plurilinguismo</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-white/60 font-medium">Assessor(a)</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold text-slate-900 mb-1 assessor-name">Roberto Martín Molero</h3>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Bilinguismo</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#British Council</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#CLIL</span>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed italic card-preview">"Lidera os programas bilingues na região, com foco especial no programa British Council..."</p>
+            <div class="hidden-details hidden space-y-4 pt-4 border-t border-slate-100 mt-4 animate-fadeIn">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Missão & Funções</span>
+                <p class="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100 leading-relaxed text-sm">
+                  Lidera os programas bilingues na região, com foco especial no programa conjunto British Council e no ensino integrado de conteúdos e línguas (metodologia CLIL/AICLE). Adicionalmente, atua como motor estratégico dos projetos de internacionalização e intercâmbio europeu.
+                </p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Impacto Prático</span>
+                <p class="text-xs text-indigo-950 bg-indigo-50/50 p-3 rounded-lg border border-indigo-100/50 italic">
+                  "Aumenta a competitividade internacional dos alunos da Estremadura ao promover a proficiência linguística ativa e a consciência global."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+          <button class="toggle-details-btn text-xs font-bold py-2 px-4 rounded-lg flex items-center gap-1.5 bg-slate-200/60 text-slate-700 hover:bg-slate-200 transition-colors">
+            Ver Funções & Impacto
+            <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Assessor 7 -->
+      <div class="assessor-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" data-categories="all inclusao">
+        <div>
+          <div class="p-4 border-b border-cyan-500 text-cyan-700 bg-cyan-50 flex justify-between items-center">
+            <span class="text-xs font-black uppercase tracking-wider">Postos Específicos</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-white/60 font-medium">Assessor(a)</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold text-slate-900 mb-1 assessor-name">Ana Belén de la Osa Sánchez</h3>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Liderança</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Estágio</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Rayuela</span>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed italic card-preview">"Responsável pelo acompanhamento de equipas de gestão escolar e diretores..."</p>
+            <div class="hidden-details hidden space-y-4 pt-4 border-t border-slate-100 mt-4 animate-fadeIn">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Missão & Funções</span>
+                <p class="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100 leading-relaxed text-sm">
+                  Responsável pelo acompanhamento de equipas de gestão escolar e diretores. Desenha a formação crítica e obrigatória para os professores funcionários em ano de estágio pedagógico. Domina e forma na utilização da plataforma de gestão integral educativa 'Rayuela'.
+                </p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Impacto Prático</span>
+                <p class="text-xs text-indigo-950 bg-indigo-50/50 p-3 rounded-lg border border-indigo-100/50 italic">
+                  "Garante a estabilidade e a excelência organizativa das lideranças escolares, reduzindo a ansiedade dos docentes que ingressam no sistema público."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+          <button class="toggle-details-btn text-xs font-bold py-2 px-4 rounded-lg flex items-center gap-1.5 bg-slate-200/60 text-slate-700 hover:bg-slate-200 transition-colors">
+            Ver Funções & Impacto
+            <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Assessor 8 -->
+      <div class="assessor-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" data-categories="all digital">
+        <div>
+          <div class="p-4 border-b border-emerald-500 text-emerald-700 bg-emerald-50 flex justify-between items-center">
+            <span class="text-xs font-black uppercase tracking-wider">Tecnologias Educativas</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-white/60 font-medium">Assessor(a)</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold text-slate-900 mb-1 assessor-name">Hilario Cambero Sánchez</h3>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#CDD</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#WordPress</span>
+              <span class="text-xs px-2 py-1 bg-slate-100 rounded text-slate-600 font-medium">#Canva</span>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed italic card-preview">"Responsável por desenhar o plano de Competência Digital Docente (CDD)..."</p>
+            <div class="hidden-details hidden space-y-4 pt-4 border-t border-slate-100 mt-4 animate-fadeIn">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Missão & Funções</span>
+                <p class="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100 leading-relaxed text-sm">
+                  Responsável por desenhar o plano de Competência Digital Docente (CDD) segundo o referencial europeu. Oferece mentoria especializada no uso e administração técnica de plataformas institucionais integradas como WordPress e na conceção de conteúdos digitais com Canva.
+                </p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Impacto Prático</span>
+                <p class="text-xs text-indigo-950 bg-indigo-50/50 p-3 rounded-lg border border-indigo-100/50 italic">
+                  "Transforma os docentes de meros consumidores de tecnologia para produtores éticos de ecossistemas digitais de aprendizagem."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+          <button class="toggle-details-btn text-xs font-bold py-2 px-4 rounded-lg flex items-center gap-1.5 bg-slate-200/60 text-slate-700 hover:bg-slate-200 transition-colors">
+            Ver Funções & Impacto
+            <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: NON-TEACHING OPERATIONS & ADMINISTRATION -->
+  <section class="max-w-7xl mx-auto px-6 mt-16 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-3xl p-8 md:p-12 relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full filter blur-2xl"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-indigo-500/10 rounded-full filter blur-3xl"></div>
+
+    <div class="relative z-10 max-w-4xl">
+      <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
+        Eficácia Silenciosa
+      </span>
+      <h2 class="text-3xl font-black mt-3 mb-2 text-white">Equipa de Apoio Operacional e Administrativo</h2>
+      <p class="text-slate-300 text-sm md:text-base mb-8 max-w-2xl">
+        Sem uma infraestrutura logística, administrativa e tecnológica excelente, as ações formativas e metodológicas não conseguiriam ser executadas com o rigor exigido. Conheça as engrenagens ocultas:
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white/5 border border-white/10 p-5 rounded-xl backdrop-blur-sm">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-bold text-sm">1</span>
+            <h3 class="font-bold text-white text-base">Administração e Secretaria</h3>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Garante a legalidade e transparência da gestão financeira, executa o orçamento institucional e certifica oficialmente todas as ações de formação efetuadas pelos professores.
+          </p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 p-5 rounded-xl backdrop-blur-sm">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-bold text-sm">2</span>
+            <h3 class="font-bold text-white text-base">Administradores Informáticos</h3>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Asseguram que a infraestrutura de rede, o Wi-Fi de alta densidade e as plataformas digitais de suporte às ações online e presenciais funcionem com 100% de eficácia.
+          </p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 p-5 rounded-xl backdrop-blur-sm">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-bold text-sm">3</span>
+            <h3 class="font-bold text-white text-base">Portaria e Limpeza</h3>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Os rostos acolhedores que garantem o controlo de acessos, a orientação adequada ao público visitante e a excelente manutenção diária de todas as salas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: INFRAESTRUTURAS (FUTURE LAB ETC) -->
+  <section class="max-w-7xl mx-auto px-6 mt-16">
+    <div class="text-center mb-8">
+      <span class="text-xs font-bold text-indigo-600 tracking-wider uppercase bg-indigo-50 px-3 py-1 rounded-full">Espaços do Futuro</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-2">Infraestruturas de Vanguarda</h2>
+      <p class="text-slate-600 max-w-2xl mx-auto mt-1 text-sm md:text-base">
+        O edifício nobre de Cáceres junta o respeito pela tradição e património histórico a espaços inovadores desenhados para a educação do século XXI.
+      </p>
+    </div>
+
+    <!-- Interactive Tour Layout -->
+    <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+      <!-- Left Column - List of spaces (Toggles) -->
+      <div class="lg:col-span-5 flex flex-col gap-3 justify-center" id="space-tabs">
+        <button 
+          data-space="0"
+          class="space-btn p-4 rounded-xl border text-left transition-all duration-200 flex items-center justify-between bg-white border-indigo-600 shadow-md ring-1 ring-indigo-500"
+        >
+          <div class="flex gap-3 items-center">
+            <span class="space-dot w-3 h-3 rounded-full bg-indigo-600 animate-ping"></span>
+            <span class="space-title-text font-bold text-sm md:text-base text-indigo-950">Aula do Futuro (Future Lab)</span>
+          </div>
+          <svg class="w-4 h-4 text-slate-400 transition-transform rotate-90 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+
+        <button 
+          data-space="1"
+          class="space-btn p-4 rounded-xl border text-left transition-all duration-200 flex items-center justify-between bg-slate-100/50 hover:bg-white border-slate-200"
+        >
+          <div class="flex gap-3 items-center">
+            <span class="space-dot w-3 h-3 rounded-full bg-slate-300"></span>
+            <span class="space-title-text font-bold text-sm md:text-base text-slate-600">Estação de Rádio Escolar</span>
+          </div>
+          <svg class="w-4 h-4 text-slate-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+
+        <button 
+          data-space="2"
+          class="space-btn p-4 rounded-xl border text-left transition-all duration-200 flex items-center justify-between bg-slate-100/50 hover:bg-white border-slate-200"
+        >
+          <div class="flex gap-3 items-center">
+            <span class="space-dot w-3 h-3 rounded-full bg-slate-300"></span>
+            <span class="space-title-text font-bold text-sm md:text-base text-slate-600">Auditório e Espaços Comuns</span>
+          </div>
+          <svg class="w-4 h-4 text-slate-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+
+        <button 
+          data-space="3"
+          class="space-btn p-4 rounded-xl border text-left transition-all duration-200 flex items-center justify-between bg-slate-100/50 hover:bg-white border-slate-200"
+        >
+          <div class="flex gap-3 items-center">
+            <span class="space-dot w-3 h-3 rounded-full bg-slate-300"></span>
+            <span class="space-title-text font-bold text-sm md:text-base text-slate-600">Pátio Histórico</span>
+          </div>
+          <svg class="w-4 h-4 text-slate-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Right Column - Large Showcase Card -->
+      <div class="lg:col-span-7">
+        <div class="bg-white rounded-2xl shadow-lg border border-indigo-50/80 p-6 md:p-8 flex flex-col justify-between h-full transition-all min-h-[350px]" id="space-showcase">
+          <div>
+            <div class="flex justify-between items-center mb-4 border-b border-slate-100 pb-3">
+              <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest block">Espaço Destaque</span>
+              <span class="text-xs bg-indigo-50 text-indigo-700 font-bold px-2 py-0.5 rounded-full">
+                Modernidade & Património
+              </span>
+            </div>
+            
+            <h3 class="text-2xl font-black text-slate-900 mb-3" id="showcase-title">
+              Aula do Futuro (Future Lab)
+            </h3>
+            
+            <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-6" id="showcase-description">
+              Inspirada no modelo europeu 'Future Classroom Lab' promovido pela European Schoolnet. Trata-se de um espaço modular desenhado para quebrar a rigidez das salas de aula tradicionais. Está dividida em zonas de atividade: Investigar, Criar, Apresentar, Desenvolver e Interagir.
+            </p>
+
+            <div class="mb-6 bg-slate-50 p-4 rounded-xl border border-slate-100">
+              <span class="text-xs font-black text-slate-400 uppercase tracking-widest block mb-2">Equipamento & Tecnologia Chave</span>
+              <p class="text-xs text-slate-700 leading-relaxed font-mono" id="showcase-tech">
+                Impressoras 3D, kits de robótica, óculos de realidade virtual, painéis táteis interativos e mobiliário flexível de rápida reconfiguração.
+              </p>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-100 pt-4 flex items-center gap-3">
+            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider block">O valor pedagógico:</span>
+            <p class="text-xs text-slate-500 italic flex-1" id="showcase-impact">
+              "Funciona como um laboratório vivo onde os professores experimentam pessoalmente como o espaço físico condiciona e liberta a aprendizagem ativa."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: EUROPEAN PROJECTION - ERASMUS+ -->
+  <section class="max-w-7xl mx-auto px-6 mt-16">
+    <div class="bg-gradient-to-br from-indigo-900 via-indigo-950 to-indigo-900 text-white rounded-3xl shadow-xl overflow-hidden">
+      <div class="grid lg:grid-cols-12">
+        
+        <!-- Left Box (Branding and Concept) -->
+        <div class="p-8 md:p-12 lg:col-span-5 bg-black/20 flex flex-col justify-between">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-emerald-300 border border-white/10 mb-6 uppercase tracking-wider">
+              Erasmus+
+            </span>
+            <h2 class="text-3xl md:text-4xl font-black text-white leading-tight mb-4">
+              "Weaving the European Network"
+            </h2>
+            <p class="text-indigo-200 text-sm md:text-base leading-relaxed font-light mb-6">
+              A projeção europeia do CPR de Cáceres ultrapassa fronteiras físicas. Através de parcerias estratégicas, o centro promove o intercâmbio de conhecimento focado na sustentabilidade, inclusão ativa, formação permanente e na digitalização pedagógica.
+            </p>
+          </div>
+          
+          <div class="border-t border-white/10 pt-4">
+            <span class="text-xs text-slate-400 uppercase tracking-wider font-bold block mb-1">Impacto Final</span>
+            <p class="text-xs text-emerald-400 italic font-semibold">
+              Conexão ativa de Cáceres com as redes de vanguarda da sustentabilidade, inclusão real e educação do futuro na União Europeia.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Box (Interactive Journey Hub - MULTIPLE MOBILITIES) -->
+        <div class="p-8 md:p-12 lg:col-span-7 flex flex-col justify-center">
+          <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase block mb-2">
+            Diário Interativo de Mobilidades do CPR
+          </span>
+          
+          <!-- Tabs selector -->
+          <div class="flex flex-wrap gap-2 mb-6 border-b border-white/10 pb-4" id="mobility-tabs">
+            <button 
+              data-mobility="islandia"
+              class="mobility-btn px-3 py-2 text-[11px] font-black uppercase rounded-lg transition-all flex items-center gap-1.5 bg-emerald-500 text-slate-950 shadow"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.6 9h16.8M3.6 15h16.8M12 3a15.3 15.3 0 014 9 15.3 15.3 0 01-4 9 15.3 15.3 0 01-4-9 15.3 15.3 0 014-9z"></path>
+              </svg>
+              Islândia (Sustentabilidade)
+            </button>
+            <button 
+              data-mobility="atenas"
+              class="mobility-btn px-3 py-2 text-[11px] font-black uppercase rounded-lg transition-all flex items-center gap-1.5 bg-white/5 text-slate-300 hover:bg-white/10"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.6 9h16.8M3.6 15h16.8M12 3a15.3 15.3 0 014 9 15.3 15.3 0 01-4 9 15.3 15.3 0 01-4-9 15.3 15.3 0 014-9z"></path>
+              </svg>
+              Atenas (Inclusão)
+            </button>
+            <button 
+              data-mobility="reuniao"
+              class="mobility-btn px-3 py-2 text-[11px] font-black uppercase rounded-lg transition-all flex items-center gap-1.5 bg-white/5 text-slate-300 hover:bg-white/10"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.6 9h16.8M3.6 15h16.8M12 3a15.3 15.3 0 014 9 15.3 15.3 0 01-4 9 15.3 15.3 0 01-4-9 15.3 15.3 0 014-9z"></path>
+              </svg>
+              Ilha Reunião (Inclusão/Digital)
+            </button>
+          </div>
+
+          <!-- Dynamic content wrapper -->
+          <div id="mobility-content">
+            
+            <!-- Tab Islandia -->
+            <div id="mob-islandia" class="animate-fadeIn space-y-4">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="text-xl md:text-2xl font-extrabold text-white">
+                  Islândia — Curso de Sustentabilidade
+                </h3>
+                <span class="text-xs px-2.5 py-1 bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 rounded-full font-bold">
+                  28 Março a 04 Abril
+                </span>
+              </div>
+
+              <p class="text-slate-300 text-sm leading-relaxed">
+                O assessor <strong>Jesús Durán Naharro</strong>, responsável pela <em>Assessoria de Formação Profissional e Ensino de Regimes Especiais</em>, realizou uma mobilidade de aprendizagem intensiva na Islândia focada no clima e transição ecológica.
+              </p>
+
+              <div class="bg-white/5 border border-white/10 p-4 rounded-xl space-y-3">
+                <div>
+                  <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Curso Especializado</span>
+                  <p class="text-sm text-emerald-300 font-mono font-bold italic">
+                    "Greener schools for a sustainable future: Climate change education"
+                  </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4 pt-2 border-t border-white/5">
+                  <div>
+                    <span class="text-xs font-bold text-slate-400 block">Foco Pedagógico</span>
+                    <p class="text-xs text-slate-300">
+                      Desenhar itinerários de descarbonização e educar para as alterações climáticas a partir do quotidiano das escolas.
+                    </p>
+                  </div>
+                  <div>
+                    <span class="text-xs font-bold text-slate-400 block">Impacto em Cáceres</span>
+                    <p class="text-xs text-slate-300">
+                      Transferência direta de metodologias verdes para o corpo docente e incentivo à sustentabilidade ambiental.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Atenas -->
+            <div id="mob-atenas" class="hidden animate-fadeIn space-y-4">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="text-xl md:text-2xl font-extrabold text-white">
+                  Atenas (Grécia) — Desenho de Ambientes Inclusivos
+                </h3>
+                <span class="text-xs px-2.5 py-1 bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 rounded-full font-bold">
+                  21 a 29 de Março
+                </span>
+              </div>
+
+              <p class="text-slate-300 text-sm leading-relaxed">
+                As assessoras <strong>Ester Bejarano Bermejo</strong> e <strong>Ana Belén de la Osa Sánchez</strong> participaram nesta relevante formação para liderar a mudança metodológica e a personalização da aprendizagem em Cáceres.
+              </p>
+
+              <div class="bg-white/5 border border-white/10 p-4 rounded-xl space-y-3">
+                <div>
+                  <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Curso Especializado</span>
+                  <p class="text-sm text-emerald-300 font-mono font-bold italic">
+                    "Designing Inclusive Learning Environments to Support all Students"
+                  </p>
+                </div>
+
+                <div class="space-y-2 text-slate-200 text-xs border-t border-white/5 pt-3">
+                  <p>
+                    <strong class="text-white">Modelo Social da Deficiência:</strong> Foco em eliminar as barreiras do ambiente escolar, em vez de centrar as dificuldades apenas no aluno.
+                  </p>
+                  <p>
+                    <strong class="text-white">Index for Inclusion:</strong> Ferramenta estratégica chave utilizada para analisar o funcionamento das escolas, detetar obstáculos e desenhar planos de melhoria partilhados com toda a comunidade educativa.
+                  </p>
+                  <p>
+                    <strong class="text-white">Diferenciação Curricular & TIC/IA:</strong> Uso do desenho universal e ferramentas digitais para personalizar materiais, gerar apoios flexíveis e maximizar a colaboração entre docentes, especialistas e famílias.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Ilha Reuniao -->
+            <div id="mob-reuniao" class="hidden animate-fadeIn space-y-4">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="text-xl md:text-2xl font-extrabold text-white">
+                  Ilha Reunião (França) — Abril de 2026
+                </h3>
+                <span class="text-xs px-2.5 py-1 bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-full font-bold">
+                  Abril 2026
+                </span>
+              </div>
+
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Uma missão oficial de cooperação transfronteiriça com o objetivo de observar diretamente e partilhar práticas de inovação pedagógica, inclusão ativa de diversidade e integração digital.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-white/5 border border-white/10 p-4 rounded-xl">
+                  <span class="text-xs font-bold text-slate-400 block mb-2">Assessores em Comitiva</span>
+                  <div class="space-y-1">
+                    <div class="text-xs text-white font-semibold">Hilario Cambero <span class="text-slate-400 text-[10px]">(Tec. Digital)</span></div>
+                    <div class="text-xs text-white font-semibold">Silvia Ramos <span class="text-slate-400 text-[10px]">(Atenção à Diversidade)</span></div>
+                    <div class="text-xs text-white font-semibold">Roberto Martín <span class="text-slate-400 text-[10px]">(Plurilinguismo)</span></div>
+                    <div class="text-xs text-white font-semibold">María Guerrero <span class="text-slate-400 text-[10px]">(Curricular & REBEX)</span></div>
+                  </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-4 rounded-xl flex flex-col justify-between">
+                  <div>
+                    <span class="text-xs font-bold text-slate-400 block mb-1">Eixo de Estudo</span>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                      Integração digital de vanguarda e coesão em ambientes escolares linguisticamente complexos.
+                    </p>
+                  </div>
+                  <div class="text-[10px] text-emerald-300 font-bold tracking-wider mt-2 uppercase">
+                    Sinergia Europeia Ativa
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: SUSTAINABILITY PILLARS -->
+  <section class="max-w-7xl mx-auto px-6 mt-16">
+    <div class="text-center mb-8">
+      <span class="text-xs font-bold text-indigo-600 tracking-wider uppercase bg-indigo-50 px-3 py-1 rounded-full">Sustentabilidade & Compromisso</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-2">Os Quatro Pilares de Sustentabilidade</h2>
+      <p class="text-slate-600 max-w-2xl mx-auto mt-1 text-sm md:text-base">
+        O CPR de Cáceres assume um compromisso inabalável com o futuro, alinhando toda a sua gestão com os Objetivos de Desenvolvimento Sustentável (ODS) das Nações Unidas.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Pilar 1 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Coerência Educativa</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Tudo o que se ensina e promove está alinhado com a realidade diária das salas de aula e as necessidades reais dos alunos.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+          <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider">Pilar 01</span>
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        </div>
+      </div>
+
+      <!-- Pilar 2 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Compromisso Ambiental</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Orientados pela política 'Cero Papel' (Zero Papel). Digitalização, e-learning e fluxos de trabalho desmaterializados e sustentáveis.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+          <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider">Pilar 02</span>
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        </div>
+      </div>
+
+      <!-- Pilar 3 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Autonomia Operacional</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Capacidade de gerir de forma ágil e independente os recursos para responder de imediato às emergências pedagógicas da região.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+          <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider">Pilar 03</span>
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        </div>
+      </div>
+
+      <!-- Pilar 4 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Inovação Constante</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Atualização contínua perante metodologias emergentes, transformação tecnológica, IA e modelos inclusivos.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+          <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider">Pilar 04</span>
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONCLUSION -->
+  <footer class="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-slate-200">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs text-center md:text-left">
+      <div>
+        <p class="font-bold text-slate-700">© 2026 Centro de Professores e de Recursos (CPR) de Cáceres.</p>
+        <p class="mt-1 text-slate-400">Direção-Geral de Formação Profissional, Inovação e Inclusão Educativa — Estremadura, Espanha.</p>
+      </div>
+      <div class="flex gap-4">
+        <span class="hover:text-indigo-600 cursor-help transition-colors">Normativa Decreto 69/2007</span>
+        <span>•</span>
+        <span class="hover:text-indigo-600 cursor-help transition-colors">Políticas ODS / Cero Papel</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+  <script>
+    // --- 1. ACCORDION LOGIC ---
+    const accordionToggle = document.getElementById('accordion-toggle');
+    const accordionContent = document.getElementById('accordion-content');
+    const accordionArrow = document.getElementById('accordion-arrow');
+
+    accordionToggle.addEventListener('click', () => {
+      const isHidden = accordionContent.classList.contains('hidden');
+      if (isHidden) {
+        accordionContent.classList.remove('hidden');
+        accordionArrow.classList.add('rotate-180');
+      } else {
+        accordionContent.classList.add('hidden');
+        accordionArrow.classList.remove('rotate-180');
+      }
+    });
+
+    // --- 2. SEARCH & FILTER LOGIC (ASSESSORES) ---
+    const searchInput = document.getElementById('search-input');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.assessor-card');
+
+    let currentFilter = 'all';
+    let currentSearch = '';
+
+    function applyFilters() {
+      cards.forEach(card => {
+        const name = card.querySelector('.assessor-name').textContent.toLowerCase();
+        const area = card.querySelector('.tracking-wider').textContent.toLowerCase();
+        const categoryTags = card.getAttribute('data-categories').split(' ');
+        
+        const matchesSearch = name.includes(currentSearch) || area.includes(currentSearch);
+        const matchesFilter = currentFilter === 'all' || categoryTags.includes(currentFilter);
+
+        if (matchesSearch && matchesFilter) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    searchInput.addEventListener('input', (e) => {
+      currentSearch = e.target.value.toLowerCase();
+      applyFilters();
+    });
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Set active button style
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-slate-900', 'text-white', 'shadow-sm');
+          b.classList.add('bg-slate-50', 'text-slate-600');
+        });
+        btn.classList.remove('bg-slate-50', 'text-slate-600');
+        btn.classList.add('bg-slate-900', 'text-white', 'shadow-sm');
+
+        currentFilter = btn.getAttribute('data-category');
+        applyFilters();
+      });
+    });
+
+    // --- 3. EXPANDABLE DETAILS ON CARDS ---
+    const cardToggleBtns = document.querySelectorAll('.toggle-details-btn');
+    cardToggleBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const card = btn.closest('.assessor-card');
+        const hiddenDetails = card.querySelector('.hidden-details');
+        const previewText = card.querySelector('.card-preview');
+        const isHidden = hiddenDetails.classList.contains('hidden');
+        const arrowSvg = btn.querySelector('svg');
+
+        if (isHidden) {
+          hiddenDetails.classList.remove('hidden');
+          previewText.classList.add('hidden');
+          btn.innerHTML = `Ocultar Detalhes <svg class="w-4 h-4 transition-transform rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>`;
+          card.classList.add('ring-2', 'ring-indigo-500', 'shadow-xl', 'border-transparent');
+          card.classList.remove('border-slate-200', 'shadow-sm');
+        } else {
+          hiddenDetails.classList.add('hidden');
+          previewText.classList.remove('hidden');
+          btn.innerHTML = `Ver Funções & Impacto <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>`;
+          card.classList.remove('ring-2', 'ring-indigo-500', 'shadow-xl', 'border-transparent');
+          card.classList.add('border-slate-200', 'shadow-sm');
+        }
+      });
+    });
+
+    // --- 4. INFRAESTRUTURAS (FUTURE LAB ETC) TAB TOUR ---
+    const spaceData = [
+      {
+        titulo: "Aula do Futuro (Future Lab)",
+        descricao: "Inspirada no modelo europeu 'Future Classroom Lab' promovido pela European Schoolnet. Trata-se de um espaço modular desenhado para quebrar a rigidez das salas de aula tradicionais. Está dividida em zonas de atividade: Investigar, Criar, Apresentar, Desenvolver e Interagir.",
+        tecnologia: "Impressoras 3D, kits de robótica, óculos de realidade virtual, painéis táteis interativos e mobiliário flexível de rápida reconfiguração.",
+        impacto: "Funciona como um laboratório vivo onde os professores experimentam pessoalmente como o espaço físico condiciona e liberta a aprendizagem ativa."
+      },
+      {
+        titulo: "Estação de Rádio Escolar",
+        descricao: "Estúdio de gravação de áudio e difusão totalmente equipado. Desenhado para dinamizar a competência comunicativa linguística, o trabalho colaborativo e a inclusão.",
+        tecnologia: "Mesa de mistura profissional, microfones de estúdio com braços articulados, isolamento acústico e software de edição de áudio digital.",
+        impacto: "Os assessores orientam os docentes a implementar projetos curriculares transdisciplinares tendo o podcast e a rádio como produtos finais motivadores."
+      },
+      {
+        titulo: "Auditório e Espaços Comuns",
+        descricao: "Espaço nobre do centro, perfeitamente integrado no edifício histórico, mas equipado com a mais recente tecnologia de projeção e sonorização. Tem capacidade para albergar seminários, jornadas e conferências de impacto regional e internacional.",
+        tecnologia: "Sistemas de conferência híbrida, som surround digital de alta qualidade e palcos adaptáveis.",
+        impacto: "Ponto de encontro estratégico da comunidade docente de Cáceres, acolhendo os maiores pensadores e investigadores da pedagogia moderna."
+      },
+      {
+        titulo: "Pátio Histórico",
+        descricao: "O coração arquitetónico do edifício de Cáceres. Um pátio exterior tradicional espanhol que serve como espaço de convivência, descanso ativo e catalisador de aprendizagens informais.",
+        tecnologia: "Zonas verdes projetadas para sustentabilidade, desenho acústico natural e adaptabilidade para coffee-breaks e encontros ao ar livre.",
+        impacto: "Recorda-nos que a educação é, acima de tudo, um ato social e humano de partilha, criando laços e redes de cooperação num ambiente sereno."
+      }
+    ];
+
+    const spaceBtns = document.querySelectorAll('.space-btn');
+    const showcaseTitle = document.getElementById('showcase-title');
+    const showcaseDescription = document.getElementById('showcase-description');
+    const showcaseTech = document.getElementById('showcase-tech');
+    const showcaseImpact = document.getElementById('showcase-impact');
+
+    spaceBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Reset styles for all buttons
+        spaceBtns.forEach(b => {
+          b.className = "space-btn p-4 rounded-xl border text-left transition-all duration-200 flex items-center justify-between bg-slate-100/50 hover:bg-white border-slate-200";
+          const dot = b.querySelector('.space-dot');
+          dot.className = "space-dot w-3 h-3 rounded-full bg-slate-300";
+          const text = b.querySelector('.space-title-text');
+          text.className = "space-title-text font-bold text-sm md:text-base text-slate-600";
+          const svg = b.querySelector('svg');
+          svg.className = "w-4 h-4 text-slate-400 transition-transform";
+        });
+
+        // Apply active styles to clicked
+        btn.className = "space-btn p-4 rounded-xl border text-left transition-all duration-200 flex items-center justify-between bg-white border-indigo-600 shadow-md ring-1 ring-indigo-500";
+        const activeDot = btn.querySelector('.space-dot');
+        activeDot.className = "space-dot w-3 h-3 rounded-full bg-indigo-600 animate-ping";
+        const activeText = btn.querySelector('.space-title-text');
+        activeText.className = "space-title-text font-bold text-sm md:text-base text-indigo-950";
+        const activeSvg = btn.querySelector('svg');
+        activeSvg.className = "w-4 h-4 text-slate-400 transition-transform rotate-90 text-indigo-600";
+
+        // Update card content
+        const idx = parseInt(btn.getAttribute('data-space'));
+        const data = spaceData[idx];
+
+        const showcase = document.getElementById('space-showcase');
+        showcase.classList.remove('animate-fadeIn');
+        void showcase.offsetWidth; // Trigger reflow to restart animation
+        showcase.classList.add('animate-fadeIn');
+
+        showcaseTitle.textContent = data.titulo;
+        showcaseDescription.textContent = data.descricao;
+        showcaseTech.textContent = data.tecnologia;
+        showcaseImpact.textContent = `"${data.impacto}"`;
+      });
+    });
+
+    // --- 5. ERASMUS+ MOBILITIES TABS LOGIC ---
+    const mobilityBtns = document.querySelectorAll('.mobility-btn');
+    const mobContainers = {
+      islandia: document.getElementById('mob-islandia'),
+      atenas: document.getElementById('mob-atenas'),
+      reuniao: document.getElementById('mob-reuniao')
+    };
+
+    mobilityBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Clear active states on buttons
+        mobilityBtns.forEach(b => {
+          b.className = "mobility-btn px-3 py-2 text-[11px] font-black uppercase rounded-lg transition-all flex items-center gap-1.5 bg-white/5 text-slate-300 hover:bg-white/10";
+        });
+
+        // Set active style on current button
+        btn.className = "mobility-btn px-3 py-2 text-[11px] font-black uppercase rounded-lg transition-all flex items-center gap-1.5 bg-emerald-500 text-slate-950 shadow";
+
+        // Toggle visibility of detail containers
+        const activeMob = btn.getAttribute('data-mobility');
+        Object.keys(mobContainers).forEach(key => {
+          if (key === activeMob) {
+            mobContainers[key].classList.remove('hidden');
+          } else {
+            mobContainers[key].classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
